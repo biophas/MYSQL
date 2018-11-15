@@ -1,0 +1,40 @@
+# INSTALL MYSQL ON LINUX DEBIAN 
+
+# Get to the download page
+
+https://dev.mysql.com/downloads/repo/apt/
+
+# For example, for version w.x.y-z of the package, the command is: 
+ 
+dpkg -i mysql-apt-config_w.x.y-z_all.deb
+
+# update package information from the MySQL APT repository with the following command (this step is mandatory):
+
+apt-get update
+
+# Install MySQL by the following command: 
+
+apt-get install mysql-server
+
+# The MySQL server is started automatically after installation. You can check the status of the MySQL server with the following command: 
+
+service mysql status
+
+#  Stop the MySQL server with the following command: 
+
+service mysql stop
+
+#  To restart the MySQL server, use the following command: 
+
+service mysql start
+
+# INSTALL MYSQL-WORKBENCH 
+
+#  For example, to install the MySQL Workbench: 
+
+apt-get install mysql-workbench-community
+
+#  To install the shared client libraries: 
+
+apt-get install libmysqlclient18
+
